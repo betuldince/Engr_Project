@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/RCK 2.3/Scenes/FreeMove.unity
+    guid: 73f44471c7c4bed47a2702959b7887ff
+  - enabled: 1
+    path: Assets/RCK 2.3/Scenes/MainMenu.unity
+    guid: e2d4f6014369e6347995e4419bbe051b
+  - enabled: 1
+    path: Assets/RCK 2.3/Scenes/Simple.unity
+    guid: 7aadb93ad643ae648ba05d125a0e02b5
   m_configObjects: {}
