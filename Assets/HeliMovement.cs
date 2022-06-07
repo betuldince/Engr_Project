@@ -5,6 +5,7 @@ using System.IO.Ports;
 
 public class HeliMovement : MonoBehaviour
 {
+    public string[] v ;
     private Rigidbody myRigidbody;
     private int apply_force;
     private int steer_forward;
@@ -40,6 +41,7 @@ public class HeliMovement : MonoBehaviour
     void getActionFromUser(){
         if(Input.GetKeyDown(KeyCode.U)){
             apply_force = 1;
+            //Debug.Log("Here!!");
         }
         
         if(Input.GetKeyUp(KeyCode.U)){
@@ -91,16 +93,17 @@ public class HeliMovement : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.C)){
             arduino_mode = 1;
-            arduino = new SerialPort("COM6" , 9600);
+            arduino = new SerialPort("COM5" , 9600);
             arduino.Open();
         }
     }
     void getActionViaArduino(){
 		datas = arduino.ReadLine();
         if (datas.Length==0)return;
-		string[] v= datas.Split(',');
-        float jX = float.Parse(v[0]);
-        float jY = float.Parse(v[1]);
+        Debug.Log(datas);
+		v= datas.Split(',');
+        int jX = int.Parse(v[0]);
+        int jY = int.Parse(v[1]);
         //float jButton = float.Parse(v[2]);12,13,14
         float bx = float.Parse(v[12]);
         float by = float.Parse(v[13]);
