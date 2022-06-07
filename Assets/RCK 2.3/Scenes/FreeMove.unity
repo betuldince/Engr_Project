@@ -3620,7 +3620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MotorForce: 2500
-  steerForce: 40
+  steerForce: 4
   Fr_L: {fileID: 1068707449}
   Fr_R: {fileID: 1134588475}
   Bc_L: {fileID: 1194906119}

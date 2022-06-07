@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 50561759}
   - component: {fileID: 50561762}
   - component: {fileID: 50561761}
+  - component: {fileID: 50561763}
   - component: {fileID: 50561760}
   m_Layer: 0
   m_Name: Coin 9
@@ -266,20 +267,22 @@ Transform:
   m_Father: {fileID: 1877098112}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!136 &50561760
-CapsuleCollider:
+--- !u!114 &50561760
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50561758}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f976ec5616bb4724eae202a3ecb17c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  c: 
+  coinname: 
+  c2: 
 --- !u!23 &50561761
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -329,6 +332,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50561758}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &50561763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50561758}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: -0.00000005960463, y: -1.3552527e-20, z: -0.0000014007092}
 --- !u!1 &95314654
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +447,7 @@ GameObject:
   - component: {fileID: 100209985}
   - component: {fileID: 100209988}
   - component: {fileID: 100209987}
+  - component: {fileID: 100209989}
   - component: {fileID: 100209986}
   m_Layer: 0
   m_Name: Coin 6
@@ -453,20 +470,22 @@ Transform:
   m_Father: {fileID: 1877098112}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!136 &100209986
-CapsuleCollider:
+--- !u!114 &100209986
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100209984}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f976ec5616bb4724eae202a3ecb17c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  c: 
+  coinname: 
+  c2: 
 --- !u!23 &100209987
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -516,6 +535,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100209984}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &100209989
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100209984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: -0.00000005960463, y: -1.3552527e-20, z: -0.00000008940697}
 --- !u!1 &110833968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1422,7 @@ GameObject:
   - component: {fileID: 448844561}
   - component: {fileID: 448844564}
   - component: {fileID: 448844563}
+  - component: {fileID: 448844565}
   - component: {fileID: 448844562}
   m_Layer: 0
   m_Name: Coin 7
@@ -1412,20 +1445,22 @@ Transform:
   m_Father: {fileID: 1877098112}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!136 &448844562
-CapsuleCollider:
+--- !u!114 &448844562
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448844560}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f976ec5616bb4724eae202a3ecb17c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  c: 
+  coinname: 
+  c2: 
 --- !u!23 &448844563
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1475,6 +1510,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448844560}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &448844565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448844560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: 0.00000005960466, y: -1.3552527e-20, z: -0.00000008940697}
 --- !u!1 &458008569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,6 +2086,7 @@ GameObject:
   - component: {fileID: 636191233}
   - component: {fileID: 636191236}
   - component: {fileID: 636191235}
+  - component: {fileID: 636191237}
   - component: {fileID: 636191234}
   m_Layer: 0
   m_Name: Coin 8
@@ -2060,20 +2109,22 @@ Transform:
   m_Father: {fileID: 1877098112}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!136 &636191234
-CapsuleCollider:
+--- !u!114 &636191234
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636191232}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f976ec5616bb4724eae202a3ecb17c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  c: 
+  coinname: 
+  c2: 
 --- !u!23 &636191235
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2123,6 +2174,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636191232}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &636191237
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636191232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: -0.00000017881392, y: -1.3552527e-20, z: -0.0000014007092}
 --- !u!1 &717071122
 GameObject:
   m_ObjectHideFlags: 0
@@ -2852,6 +2916,7 @@ GameObject:
   - component: {fileID: 1177562821}
   - component: {fileID: 1177562824}
   - component: {fileID: 1177562823}
+  - component: {fileID: 1177562825}
   - component: {fileID: 1177562822}
   m_Layer: 0
   m_Name: Coin 5
@@ -2874,20 +2939,22 @@ Transform:
   m_Father: {fileID: 1877098112}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!136 &1177562822
-CapsuleCollider:
+--- !u!114 &1177562822
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177562820}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f976ec5616bb4724eae202a3ecb17c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  c: 
+  coinname: 
+  c2: 
 --- !u!23 &1177562823
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2937,6 +3004,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177562820}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1177562825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177562820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: -0.00000017881392, y: -1.3552527e-20, z: -0.00000008940697}
 --- !u!1 &1194906115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 119902, guid: b82529e8ddfc06e4fb493d04ff82ec97, type: 3}
@@ -2983,6 +3063,7 @@ GameObject:
   - component: {fileID: 1211599939}
   - component: {fileID: 1211599942}
   - component: {fileID: 1211599941}
+  - component: {fileID: 1211599943}
   - component: {fileID: 1211599940}
   m_Layer: 0
   m_Name: Coin 3
@@ -3005,20 +3086,22 @@ Transform:
   m_Father: {fileID: 1877098112}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!136 &1211599940
-CapsuleCollider:
+--- !u!114 &1211599940
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211599938}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f976ec5616bb4724eae202a3ecb17c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  c: 
+  coinname: 
+  c2: 
 --- !u!23 &1211599941
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3068,6 +3151,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211599938}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1211599943
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211599938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: -0.00000005960463, y: -1.3552527e-20, z: -0.00000008940697}
 --- !u!4 &1279171052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: d40cda62855726d4e8af62df4770098a, type: 3}
@@ -4022,6 +4118,7 @@ GameObject:
   - component: {fileID: 1817411639}
   - component: {fileID: 1817411642}
   - component: {fileID: 1817411641}
+  - component: {fileID: 1817411643}
   - component: {fileID: 1817411640}
   m_Layer: 0
   m_Name: Coin 4
@@ -4044,20 +4141,22 @@ Transform:
   m_Father: {fileID: 1877098112}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!136 &1817411640
-CapsuleCollider:
+--- !u!114 &1817411640
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817411638}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f976ec5616bb4724eae202a3ecb17c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  c: 
+  coinname: 
+  c2: 
 --- !u!23 &1817411641
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4107,6 +4206,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817411638}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1817411643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817411638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: 0.00000005960466, y: -1.3552527e-20, z: -0.0000039041042}
 --- !u!1 &1877098111
 GameObject:
   m_ObjectHideFlags: 0
@@ -4441,7 +4553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MotorForce: 2500
-  steerForce: 40
+  steerForce: 4
   Fr_L: {fileID: 1068707449}
   Fr_R: {fileID: 1134588475}
   Bc_L: {fileID: 1194906119}
@@ -4484,6 +4596,7 @@ GameObject:
   - component: {fileID: 2054464814}
   - component: {fileID: 2054464817}
   - component: {fileID: 2054464816}
+  - component: {fileID: 2054464818}
   - component: {fileID: 2054464815}
   m_Layer: 0
   m_Name: Coin 2
@@ -4506,20 +4619,22 @@ Transform:
   m_Father: {fileID: 1877098112}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!136 &2054464815
-CapsuleCollider:
+--- !u!114 &2054464815
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054464813}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f976ec5616bb4724eae202a3ecb17c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  c: 
+  coinname: 
+  c2: 
 --- !u!23 &2054464816
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4569,6 +4684,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054464813}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &2054464818
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054464813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: -0.00000017881392, y: -1.3552527e-20, z: -0.00000008940697}
 --- !u!1 &2058641018
 GameObject:
   m_ObjectHideFlags: 0
@@ -4580,6 +4708,7 @@ GameObject:
   - component: {fileID: 2058641019}
   - component: {fileID: 2058641022}
   - component: {fileID: 2058641021}
+  - component: {fileID: 2058641023}
   - component: {fileID: 2058641020}
   m_Layer: 0
   m_Name: Coin 1
@@ -4602,20 +4731,22 @@ Transform:
   m_Father: {fileID: 1877098112}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!136 &2058641020
-CapsuleCollider:
+--- !u!114 &2058641020
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058641018}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f976ec5616bb4724eae202a3ecb17c3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  c: 
+  coinname: 
+  c2: 
 --- !u!23 &2058641021
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4665,6 +4796,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058641018}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &2058641023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058641018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 2.0000005, z: 1.0000002}
+  m_Center: {x: 0.00000005960466, y: -1.3552527e-20, z: -0.00000008940697}
 --- !u!1 &2089160853
 GameObject:
   m_ObjectHideFlags: 0

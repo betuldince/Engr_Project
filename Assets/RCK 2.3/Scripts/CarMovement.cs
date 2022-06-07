@@ -15,7 +15,7 @@ public class CarMovement : MonoBehaviour
 
     //public GameObject car;
 	//Cem
-    SerialPort arduino = new SerialPort("COM6" , 9600); // Sets the SerialPort for arduino. The boud rate and the serial port name should be same with arduino.
+    SerialPort arduino = new SerialPort("COM5" , 9600); // Sets the SerialPort for arduino. The boud rate and the serial port name should be same with arduino.
 
 	//public Rigidbody rb;                // define a rigidbody object (we can add velocities to rigidbodies using AddForce)
 	public float sensivity = 0.1f;  // sensivity is used to adjust the speed of the object in unity.
@@ -27,12 +27,6 @@ public class CarMovement : MonoBehaviour
     void Start()
     {
         arduino.Open();
-		
-		
-		
-		
-		
-		
 		
     }
 
@@ -54,7 +48,7 @@ public class CarMovement : MonoBehaviour
         }
         if (transform.rotation.eulerAngles.z > 266f && transform.rotation.eulerAngles.z < 278f)
         {
-
+            Debug.Log(coins[1]);
             Debug.Log("devrildi");
             //SceneManager.LoadScene("MainMenu");
 
@@ -85,7 +79,7 @@ public class CarMovement : MonoBehaviour
             Bc_L.brakeTorque = 0;
         }
 		*/
-        if (float.Parse(v[0]) == 0)
+        if ((float.Parse(v[0]) == 0) & (float.Parse(v[1]) == 0))
         {
             Bc_R.brakeTorque = BrakeForce;
             Bc_L.brakeTorque = BrakeForce;
@@ -106,17 +100,22 @@ public class CarMovement : MonoBehaviour
 			
 			
 		}
+       
 
     }
-     void OnCollisionEnter(Collision col){
+    
+     /*void OnCollisionEnter(Collision col){
         if (col.gameObject.tag == "Coins"){
      // a rigidbody tagged as "Ball" hit the player
             col.gameObject.SetActive(false);
+            
          }
-    }
+    }*/
     
 
-	
+    
+    
+	//arduino.WriteLine();
 	
 	
 	
