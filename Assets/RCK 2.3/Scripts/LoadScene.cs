@@ -22,4 +22,7 @@ public class LoadScene : MonoBehaviour
     public void LoadCoinMoveScene(){
     SceneManager.LoadScene("Simple");
     }
+    public void LoadDroneMoveScene(){
+    SceneManager.LoadScene("Helicopter");
+    }
 }
