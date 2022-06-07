@@ -11,19 +11,31 @@ public class CarMovement : MonoBehaviour
     public float MotorForce, steerForce;
     private float BrakeForce = 500000f;
     public WheelCollider Fr_L, Fr_R, Bc_L, Bc_R;
-	 
 
     //public GameObject car;
 	//Cem
-    SerialPort arduino = new SerialPort("COM5" , 9600); // Sets the SerialPort for arduino. The boud rate and the serial port name should be same with arduino.
+    public static SerialPort arduino = new SerialPort("COM5" , 9600); // Sets the SerialPort for arduino. The boud rate and the serial port name should be same with arduino.
 
 	//public Rigidbody rb;                // define a rigidbody object (we can add velocities to rigidbodies using AddForce)
 	public float sensivity = 0.1f;  // sensivity is used to adjust the speed of the object in unity.
 	public string datas;              //variable of speed data received from serial port
 	public float deltax;             //position change
 	public string[] v;              //speed vector in string 
-	
+	//public int coinnumber=0;
     public MeshRenderer[] coins;
+    //public string coinNumber; 
+    //public CoinTrigger a;
+
+  /*  public void CoinCollected(CoinTrigger a) {
+        coinnumber=a.getNum();
+    }
+    public void setCoinNum( )
+    {
+        coinNumber=a.getNum();
+    }*/
+
+
+
     void Start()
     {
         arduino.Open();
@@ -93,13 +105,13 @@ public class CarMovement : MonoBehaviour
 		
 		for(int i=0;i<9;i++){
 			if(float.Parse(v[i+3])==1){
-				coins[i].enabled=true;
-				
+				coins[i].enabled=true;		
 				
 			}
 			
 			
 		}
+       // arduino.WriteLine(coinNumber);
        
 
     }
@@ -112,10 +124,7 @@ public class CarMovement : MonoBehaviour
          }
     }*/
     
-
-    
-    
-	//arduino.WriteLine();
+	
 	
 	
 	
