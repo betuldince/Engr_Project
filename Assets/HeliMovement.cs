@@ -91,7 +91,7 @@ public class HeliMovement : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.C)){
             arduino_mode = 1;
-            arduino = new SerialPort("COM6" , 9600);
+            arduino = new SerialPort("COM5" , 9600);
             arduino.Open();
         }
     }
@@ -99,38 +99,38 @@ public class HeliMovement : MonoBehaviour
 		datas = arduino.ReadLine();
         if (datas.Length==0)return;
 		string[] v= datas.Split(',');
-        float jX = float.Parse(v[0]);
-        float jY = float.Parse(v[1]);
+        int jX = int.Parse(v[0]);
+        int jY = int.Parse(v[1]);
         //float jButton = float.Parse(v[2]);12,13,14
-        float bx = float.Parse(v[12]);
+        //float bx = float.Parse(v[12]);
         float by = float.Parse(v[13]);
         float bz = float.Parse(v[14]); 
-        if (jX >0f){
+        if (jX >0){
             turn_right=1;
             turn_left=0;
-        }else if(jX < 0f){
+        }else if(jX < 0){
             turn_right=0;
             turn_left=1;
         }else{
             turn_right=0;
             turn_left=0;
         }
-        if (jY >0f){
+        if (jY >0){
             apply_force = 1;
         }else{
             apply_force=0;
         }
 
-        Debug.Log("\n\n");
-        Debug.Log(bx);
-        Debug.Log(by);
-        Debug.Log(bz);
+        //Debug.Log("\n\n");
+        //Debug.Log(bx);
+        //Debug.Log(by);
+        //Debug.Log(bz);
         
         //CHANGE CONDS TO GET PROPER ACTION
-        bool forward_cond = bx>0;
-        bool backward_cond = bx>0;
-        bool right_cond = bx>0;
-        bool left_cond =bx>0 ;
+        bool forward_cond = bz>10f;
+        bool backward_cond = bz<-10f;
+        bool right_cond = by<-10f;
+        bool left_cond =by>10f ;
         if (forward_cond){
             steer_forward = 1;
             steer_back = 0;
